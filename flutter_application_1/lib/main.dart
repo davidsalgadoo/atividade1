@@ -1,7 +1,151 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(HomePage());
+  runApp(TinderPage());
+}
+
+class TinderPage extends StatelessWidget {
+  const TinderPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        body: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: [Color(0xFFFE4C7C), Color(0xFFFD5C91)],
+            ),
+          ),
+          child: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  width: 220,
+                  height: 220,
+                  decoration: BoxDecoration(shape: BoxShape.circle),
+                  child: Image.network(
+                    'https://uk.tinderpressroom.com/download/Wordmark-R+white+RGB-new.png',
+                  ),
+                ),
+                SizedBox(height: 200),
+                Text(
+                  'By tapping Create Account or Sign In, you agree to our \n Terms. Learn how we process your data in your Privacy \n palicy and Cookies Policy',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontSize: 13, color: Colors.white),
+                  softWrap: true,
+                ),
+                SizedBox(height: 100),
+                Container(
+                  padding: EdgeInsets.symmetric(horizontal: 80, vertical: 8),
+                  decoration: BoxDecoration(
+                    border: Border.all(color: Colors.white),
+                    borderRadius: BorderRadius.circular(25),
+                  ),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Container(
+                        width: 30,
+                        height: 30,
+                        margin: EdgeInsets.only(right: 50),
+                        child: Image.network(
+                          'https://img.icons8.com/m_sharp/512/FFFFFF/mac-os.png',
+                        ),
+                      ),
+                      Text(
+                        'SIGN IN APPLE',
+                        style: TextStyle(
+                          fontSize: 16,
+                          color: const Color.fromARGB(255, 255, 255, 255),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                SizedBox(height: 12),
+                Container(
+                  padding: EdgeInsets.symmetric(horizontal: 80, vertical: 8),
+                  decoration: BoxDecoration(
+                    border: Border.all(color: Colors.white),
+                    borderRadius: BorderRadius.circular(25),
+                  ),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Container(
+                        width: 30,
+                        height: 30,
+                        margin: EdgeInsets.only(right: 10),
+                        child: Image.network(
+                          'https://img.icons8.com/m_rounded/512/FFFFFF/facebook-new.png',
+                        ),
+                      ),
+                      Text(
+                        'SIGN IN WITH FACEBOOK',
+                        style: TextStyle(
+                          fontSize: 16,
+                          color: const Color.fromARGB(255, 255, 255, 255),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                SizedBox(height: 12),
+                Container(
+                  padding: EdgeInsets.symmetric(horizontal: 80, vertical: 8),
+                  decoration: BoxDecoration(
+                    border: Border.all(color: Colors.white),
+                    borderRadius: BorderRadius.circular(25),
+                  ),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Container(
+                        width: 30,
+                        height: 30,
+                        margin: EdgeInsets.only(right: 10),
+                        child: Image.network('https://i.imgur.com/CWf18w6.png'),
+                      ),
+                      Text(
+                        'Sign Up with Google',
+                        style: TextStyle(
+                          fontSize: 16,
+                          color: const Color.fromARGB(255, 255, 255, 255),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                SizedBox(height: 70),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      'Already have an account? ',
+                      style: TextStyle(fontSize: 16, color: Colors.white),
+                    ),
+                    Text(
+                      'Sign in',
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.white,
+                        decoration: TextDecoration.underline,
+                        decorationColor: Colors.white,
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
 }
 
 class HomePage extends StatelessWidget {
