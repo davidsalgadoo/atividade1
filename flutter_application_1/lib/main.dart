@@ -32,21 +32,53 @@ class TinderPage extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 200),
-                Text(
-                  'By tapping Create Account or Sign In, you agree to our \n Terms. Learn how we process your data in your Privacy \n palicy and Cookies Policy',
+                RichText(
                   textAlign: TextAlign.center,
-                  style: TextStyle(fontSize: 13, color: Colors.white),
-                  softWrap: true,
+                  text: TextSpan(
+                    style: TextStyle(fontSize: 13, color: Colors.white),
+                    children: [
+                      TextSpan(
+                        text:
+                            'By tapping Create Account or Sign In, you agree to our\n',
+                      ),
+                      TextSpan(
+                        text: 'Terms',
+                        style: TextStyle(
+                          decoration: TextDecoration.underline,
+                          color: Colors.white,
+                        ),
+                      ),
+                      TextSpan(
+                        text: '. Learn how we process your data in your ',
+                      ),
+                      TextSpan(
+                        text: 'Privacy\npolicy',
+                        style: TextStyle(
+                          decoration: TextDecoration.underline,
+                          color: Colors.white,
+                        ),
+                      ),
+                      TextSpan(text: ' and '),
+                      TextSpan(
+                        text: 'Cookies Policy',
+                        style: TextStyle(
+                          decoration: TextDecoration.underline,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
+
                 SizedBox(height: 100),
                 Container(
-                  padding: EdgeInsets.symmetric(horizontal: 80, vertical: 8),
+                  padding: EdgeInsets.symmetric(horizontal: 20, vertical: 8),
                   decoration: BoxDecoration(
                     border: Border.all(color: Colors.white),
                     borderRadius: BorderRadius.circular(25),
                   ),
                   child: Row(
-                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.start,
                     children: [
                       Container(
                         width: 30,
@@ -71,13 +103,13 @@ class TinderPage extends StatelessWidget {
                 ),
                 SizedBox(height: 12),
                 Container(
-                  padding: EdgeInsets.symmetric(horizontal: 80, vertical: 8),
+                  padding: EdgeInsets.symmetric(horizontal: 20, vertical: 8),
                   decoration: BoxDecoration(
                     border: Border.all(color: Colors.white),
                     borderRadius: BorderRadius.circular(25),
                   ),
                   child: Row(
-                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.start,
                     children: [
                       Container(
                         width: 30,
@@ -102,13 +134,13 @@ class TinderPage extends StatelessWidget {
                 ),
                 SizedBox(height: 12),
                 Container(
-                  padding: EdgeInsets.symmetric(horizontal: 80, vertical: 8),
+                  padding: EdgeInsets.symmetric(horizontal: 20, vertical: 8),
                   decoration: BoxDecoration(
                     border: Border.all(color: Colors.white),
                     borderRadius: BorderRadius.circular(25),
                   ),
                   child: Row(
-                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.start,
                     children: [
                       Container(
                         width: 30,
