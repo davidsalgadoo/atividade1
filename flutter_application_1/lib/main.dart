@@ -51,16 +51,19 @@ class TinderPage extends StatelessWidget {
                       Container(
                         width: 30,
                         height: 30,
-                        margin: EdgeInsets.only(right: 50),
+                        margin: EdgeInsets.only(right: 10),
                         child: Image.network(
                           'https://img.icons8.com/m_sharp/512/FFFFFF/mac-os.png',
                         ),
                       ),
-                      Text(
-                        'SIGN IN APPLE',
-                        style: TextStyle(
-                          fontSize: 16,
-                          color: const Color.fromARGB(255, 255, 255, 255),
+                      Expanded(
+                        child: Text(
+                          'SIGN IN APPLE',
+                          style: TextStyle(
+                            fontSize: 16,
+                            color: const Color.fromARGB(255, 255, 255, 255),
+                          ),
+                          textAlign: TextAlign.center,
                         ),
                       ),
                     ],
@@ -84,11 +87,14 @@ class TinderPage extends StatelessWidget {
                           'https://img.icons8.com/m_rounded/512/FFFFFF/facebook-new.png',
                         ),
                       ),
-                      Text(
-                        'SIGN IN WITH FACEBOOK',
-                        style: TextStyle(
-                          fontSize: 16,
-                          color: const Color.fromARGB(255, 255, 255, 255),
+                      Expanded(
+                        child: Text(
+                          'SIGN IN WITH FACEBOOK',
+                          style: TextStyle(
+                            fontSize: 16,
+                            color: const Color.fromARGB(255, 255, 255, 255),
+                          ),
+                          textAlign: TextAlign.center,
                         ),
                       ),
                     ],
@@ -110,11 +116,14 @@ class TinderPage extends StatelessWidget {
                         margin: EdgeInsets.only(right: 10),
                         child: Image.network('https://i.imgur.com/CWf18w6.png'),
                       ),
-                      Text(
-                        'Sign Up with Google',
-                        style: TextStyle(
-                          fontSize: 16,
-                          color: const Color.fromARGB(255, 255, 255, 255),
+                      Expanded(
+                        child: Text(
+                          'Sign Up with Google',
+                          style: TextStyle(
+                            fontSize: 16,
+                            color: const Color.fromARGB(255, 255, 255, 255),
+                          ),
+                          textAlign: TextAlign.center,
                         ),
                       ),
                     ],
