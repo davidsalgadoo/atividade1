@@ -150,7 +150,7 @@ class TinderPage extends StatelessWidget {
                       ),
                       Expanded(
                         child: Text(
-                          'Sign Up with Google',
+                          'SIGN IN WITH PHONE NUMBER',
                           style: TextStyle(
                             fontSize: 16,
                             color: const Color.fromARGB(255, 255, 255, 255),
